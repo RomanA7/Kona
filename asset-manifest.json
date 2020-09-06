@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/kona/static/css/main.3fd3aa1f.chunk.css",
+    "main.js": "/kona/static/js/main.97262512.chunk.js",
+    "main.js.map": "/kona/static/js/main.97262512.chunk.js.map",
+    "runtime-main.js": "/kona/static/js/runtime-main.fbb58d09.js",
+    "runtime-main.js.map": "/kona/static/js/runtime-main.fbb58d09.js.map",
+    "static/js/2.3aa7b956.chunk.js": "/kona/static/js/2.3aa7b956.chunk.js",
+    "static/js/2.3aa7b956.chunk.js.map": "/kona/static/js/2.3aa7b956.chunk.js.map",
+    "index.html": "/kona/index.html",
+    "precache-manifest.7a2dda3c3986456c9050dccd9e949947.js": "/kona/precache-manifest.7a2dda3c3986456c9050dccd9e949947.js",
+    "service-worker.js": "/kona/service-worker.js",
+    "static/css/main.3fd3aa1f.chunk.css.map": "/kona/static/css/main.3fd3aa1f.chunk.css.map",
+    "static/js/2.3aa7b956.chunk.js.LICENSE.txt": "/kona/static/js/2.3aa7b956.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/kona/static/media/second.9b1f67b9.jpg",
+    "static/media/background.jpg": "/kona/static/media/background.08830efa.jpg",
+    "static/media/product-1.png": "/kona/static/media/product-1.e0870db2.png",
+    "static/media/product-2.png": "/kona/static/media/product-2.c895e027.png",
+    "static/media/product-3.png": "/kona/static/media/product-3.31971910.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fbb58d09.js",
+    "static/js/2.3aa7b956.chunk.js",
+    "static/css/main.3fd3aa1f.chunk.css",
+    "static/js/main.97262512.chunk.js"
+  ]
+}
