@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/kona/static/css/main.3fd3aa1f.chunk.css",
-    "main.js": "/kona/static/js/main.97262512.chunk.js",
-    "main.js.map": "/kona/static/js/main.97262512.chunk.js.map",
+    "main.js": "/kona/static/js/main.18150af7.chunk.js",
+    "main.js.map": "/kona/static/js/main.18150af7.chunk.js.map",
     "runtime-main.js": "/kona/static/js/runtime-main.fbb58d09.js",
     "runtime-main.js.map": "/kona/static/js/runtime-main.fbb58d09.js.map",
     "static/js/2.3aa7b956.chunk.js": "/kona/static/js/2.3aa7b956.chunk.js",
     "static/js/2.3aa7b956.chunk.js.map": "/kona/static/js/2.3aa7b956.chunk.js.map",
     "index.html": "/kona/index.html",
-    "precache-manifest.7a2dda3c3986456c9050dccd9e949947.js": "/kona/precache-manifest.7a2dda3c3986456c9050dccd9e949947.js",
+    "precache-manifest.1cdaec6fca4ab6f28f601133b80ef620.js": "/kona/precache-manifest.1cdaec6fca4ab6f28f601133b80ef620.js",
     "service-worker.js": "/kona/service-worker.js",
     "static/css/main.3fd3aa1f.chunk.css.map": "/kona/static/css/main.3fd3aa1f.chunk.css.map",
     "static/js/2.3aa7b956.chunk.js.LICENSE.txt": "/kona/static/js/2.3aa7b956.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.fbb58d09.js",
     "static/js/2.3aa7b956.chunk.js",
     "static/css/main.3fd3aa1f.chunk.css",
-    "static/js/main.97262512.chunk.js"
+    "static/js/main.18150af7.chunk.js"
   ]
 }

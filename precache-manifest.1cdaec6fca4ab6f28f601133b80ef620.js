@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2d03faa7a29c93fdd186d25c0a2d6f70",
+    "revision": "4862b37f6dd2eaaf0e10b53f1b8c8bcb",
     "url": "/kona/index.html"
   },
   {
-    "revision": "923a7aaecef7950f7282",
+    "revision": "28797021427578096070",
     "url": "/kona/static/css/main.3fd3aa1f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/kona/static/js/2.3aa7b956.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "923a7aaecef7950f7282",
-    "url": "/kona/static/js/main.97262512.chunk.js"
+    "revision": "28797021427578096070",
+    "url": "/kona/static/js/main.18150af7.chunk.js"
   },
   {
     "revision": "d0b72dbce1144a01aeaf",
