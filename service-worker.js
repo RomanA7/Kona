@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/kona/precache-manifest.1cdaec6fca4ab6f28f601133b80ef620.js"
+  "/kona/precache-manifest.5aea53b56c76320cf511cdc6ec743c85.js"
 );
 
 self.addEventListener('message', (event) => {
