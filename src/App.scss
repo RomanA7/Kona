@@ -20,7 +20,6 @@ body {
   position: fixed;
   z-index: 1000;
   right: 0;
-  //animation: background 1s ease-in-out
   text-align: center;
   h1 {
     position: absolute;
@@ -43,6 +42,15 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 
+.active {
+  color: cyan!important;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  cursor: pointer;
+}
 
 
 h1 {
@@ -113,7 +121,13 @@ p {
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1200px) {
+  .story-section {
+    height: unset!important;
+  }
+}
+
+@media only screen and (max-width: 780px) {
   h1 {
     font-size: 32px;
     line-height: 32px;
@@ -140,7 +154,10 @@ p {
 
     .container .left {
       width: 100%;
-      margin-top: 900px;
+      margin-top: 950px;
+      .text-container {
+        overflow: unset!important;
+      }
     }
     .container .right {
       width: 100%;
@@ -223,24 +240,24 @@ p {
   height: 100vh;
   display: flex;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden !important;
   &:before {
     content: '';
     background: rgb(28,25,25);
     background: linear-gradient(0deg, rgba(28,25,25,01) 8%, rgba(255,255,255,0.05) 20%, rgba(255,255,255,0) 100%);
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     z-index: -1; 
     left: 0;
     top: 0;
-    right: 0;     
+    right: 0;   
   }
 
 
   img {
     height: 100%;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     z-index: -10;
     top: 0;
@@ -248,7 +265,6 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
-    display: block;
     z-index: -10;
   }
 
@@ -276,10 +292,8 @@ p {
 .navigation {
   position: fixed;
   left: 0;
-  bottom: 0;
   width: 100vw;
-  height: 100vh;
-  //height: calc(var(--vh, 1vh)*100);
+  height: 100vh;;
   z-index: 30;
   transform: translate(100%, 0%);
   transition: transform 0.4s cubic-bezier(1, 0.90, 0.115, 0.940);
@@ -303,7 +317,7 @@ p {
     flex-direction: column;
     a h1 {
       color: $grey;
-      margin-bottom: 10px;
+      //margin-bottom: 10px;
       transition-delay: all 0.3 cubic-bezier(1.000, -0.040, 0.115, 0.940);
       display: inline;
       &:hover {
@@ -474,6 +488,37 @@ p {
 .product-section {
   border-top: 1px solid #a4a3a31c;
   text-align: center;
+
+  .sort_container {
+    text-align: left;
+    margin-bottom: 20px;
+
+    h4 {
+      color: $grey;
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+    .sort_selectors {
+      display: flex;
+      li {
+        text-align: left;
+        display: block;
+        margin-right: 15px;
+    
+        h4 {
+          display: inline;
+          color: white;
+          font-size: 15px;
+          padding-bottom: 0;
+          &:hover {
+            color: cyan;
+          }
+        }
+      }
+  
+    }
+  }
+
 
     .product-heading {
         max-width: 50%;

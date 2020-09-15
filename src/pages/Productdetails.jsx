@@ -1,13 +1,14 @@
-import React, {useState, useEffect} from 'react'
-import {Link} from 'react-router-dom'
-import {DATA} from '../Data'
+import React from 'react'
+import {Link, useParams} from 'react-router-dom'
 import {motion} from 'framer-motion'
 import Footer from '../components/footer'
+import {D} from '../Data'
 
-//did not want to use another map() in here
 
-function Productdetails({match}) {
-    let item = match.params.id -1;
+function Productdetails() {
+    const params = useParams();
+    console.log(params.id -1)
+    let item = params.id- 1;
 
     return (
         <>
@@ -16,15 +17,15 @@ function Productdetails({match}) {
         initial='initial'
         animate='animate'
         exit='exit'>
-            <div className="container">
+            <div  className="container">
                 <div className="flex-content">
                   <div className="image-container">
-                    <img src={DATA[item].img} alt={DATA[item].name} />
+                    <img src={D[item].img} alt={D[item].name} />
                 </div>
                   <div className="text-container">                    
-                    <h1>{DATA[item].name}</h1>
-                    <h1 className="price">{DATA[item].price}</h1>
-                    <p>{DATA[item].description}</p>
+                    <h1>{D[item].name}</h1>
+                    <h1 className="price">{D[item].price}</h1>
+                    <p>{D[item].description}</p>
                     <Link className="buy-btn" to="/">Buy Now</Link> 
                 </div>
                 </div>

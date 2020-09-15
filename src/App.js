@@ -7,36 +7,53 @@ import {Switch, Route, withRouter} from 'react-router-dom'
 import MenuSidebar from './components/menusidebar'
 import Menu from './components/Menu'
 import Productdetails from './pages/Productdetails'
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from 'framer-motion'
+import { D } from './Data'
+
 
 
 
 
 function App({history}) {
   const [open, setOpen] = useState(false);
+  const [sort, setSort] = useState(["Low", "High"]);
+
   let openmenu = () => (setOpen(!open));
+
+  const [products, setProducts] = useState([]);
+
     
   useEffect(() => {
+    setProducts(D)
     const unlisten = history.listen(()=>{setOpen(false);
       setTimeout(function () {
         window.scrollTo(0,0)
       }, 1600)
     });
     return () => {
-      unlisten();
-    }
-
+      unlisten()}   
   },[]);
 
 
   if(open === true){
-    document.body.style.overflow = 'hidden';
+    document.documentElement.style = "overflow-y: hidden!important";
   } 
   else {
-    document.body.style.overflow = 'unset';
-  }  
+    document.documentElement.style = "overflow-y: unset";
+  }
   
-  
+
+
+ let sortItems = (index) => {
+   if (index=== "High") {let items = [...products].sort((a,b) => a.price > b.price ? -1: 1);
+    setProducts(items)};
+
+   if (index=== "Low") {let items = [...products].sort((a,b) => a.price < b.price ? -1: 1)
+    setProducts(items)
+   } 
+ }
+ 
+ //console.log(sort)
 
   return (
     <>
@@ -47,10 +64,10 @@ function App({history}) {
       <Route render={({location}) => (
         <AnimatePresence initial={true} exitBeforeEnter>
           <Switch location={location} key={location.pathname}>
-             <Route exact path='/'  component ={Home}></Route>
+             <Route exact path='/'  render={()=> (<Home products={products} sort={sort} sortItems={sortItems} />)}></Route>
              <Route exact path='/about'  component ={About}></Route>
-             <Route exact path='/shop'  component ={Shop}></Route>
-             <Route exact path='/shop/:id'  component ={Productdetails}></Route>
+             <Route exact path='/shop'  render={()=> (<Shop products={products} sortItems={sortItems} sort={sort} />)}></Route>
+             <Route exact path='/shop/:id'  render = {(props)=>  (<Productdetails {...props} products={products} />)}></Route>
           </Switch>
         </AnimatePresence>
       )}>

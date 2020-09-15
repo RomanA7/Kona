@@ -3,7 +3,7 @@ import img2 from "./images/product-2.png";
 import img3 from "./images/product-3.png";
 
 
-export const DATA = 
+export const D = 
     [
         {"id": 1,
          "img": img1,
